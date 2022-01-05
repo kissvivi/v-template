@@ -1,36 +1,34 @@
 # v-template
 
-#### Description
-{**When you're done, you can delete the content in this README and update the file with details for others getting started with your repository**}
+#### 介绍
+go 微服务
+基于gin的基础业务项目脚手架
 
-#### Software Architecture
-Software architecture description
+可做微服务脚手架使用
 
-#### Installation
+修改setting.yaml文件后运行
+```shell
+cd cmd 
+wire #生成wire_gen.go文件
+cd ..
+go run main.go server
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+#### 依赖注入工具 wire
+#### 安装wire
+```shell
+go get github.com/google/wire/cmd/wire
+```
+安装后会在$GOPATH/bin中生成一个可执行程序wire，
+这就是代码生成器。
+建议将$GOPATH/bin加入系统环境变量$PATH中，
+可直接在命令行中执行wire命令。
+#### 使用wire命令
+wire.go目录下直接指向` wire `命令则自动生成wire_gen.go文件
 
 
-#### Gitee Feature
+### 待完善内容
+1. 微服务注册中心
+2. 脚本命令
+3. nacos配置中心
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
