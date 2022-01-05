@@ -1,6 +1,7 @@
 # v-template
 
 #### 介绍
+go 微服务
 基于gin的基础业务项目脚手架
 
 可做微服务脚手架使用
@@ -14,7 +15,7 @@ go run main.go server
 ```
 
 #### 依赖注入工具 wire
-#####安装wire
+#### 安装wire
 ```shell
 go get github.com/google/wire/cmd/wire
 ```
@@ -22,7 +23,7 @@ go get github.com/google/wire/cmd/wire
 这就是代码生成器。
 建议将$GOPATH/bin加入系统环境变量$PATH中，
 可直接在命令行中执行wire命令。
-##### 使用wire命令
+#### 使用wire命令
 wire.go目录下直接指向` wire `命令则自动生成wire_gen.go文件
 
 
